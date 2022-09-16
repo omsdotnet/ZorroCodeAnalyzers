@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ZorroCodeAnalyzers.Example.Features.FeatureTwo
+namespace NewDotNetExample.Features.FeatureOne
 {
-  class Buzz
+  class Fizz
   {
   }
 }

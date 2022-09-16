@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NewDotNetExample.Features.FeatureOne;
 
-namespace ZorroCodeAnalyzers.Example.Infrastructure.Database
+namespace NewDotNetExample.Features.FeatureTwo
 {
-  class DB
+  class Buzz
   {
+    public Fizz fizzValue;
   }
 }

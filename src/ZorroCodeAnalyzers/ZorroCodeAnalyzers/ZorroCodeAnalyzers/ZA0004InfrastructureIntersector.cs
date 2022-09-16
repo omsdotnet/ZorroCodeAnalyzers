@@ -40,24 +40,24 @@ namespace ZorroCodeAnalyzers
         .Select(x => ((NamespaceDeclarationSyntax)x).Name.ToString())
         .FirstOrDefault();
 
-      var namespaceFeatureName = GetFeatureName(namespaceName, KeyWord);
+      var infrastructureItem = GetInfrastructureItem(namespaceName, KeyWord);
 
-      if (string.IsNullOrEmpty(namespaceName))
+      if (string.IsNullOrEmpty(infrastructureItem))
       {
         return;
       }
 
       var usingNodes = root.Usings
-        .Select(x => GetFeatureName(x.Name.ToString(), KeyWord))
+        .Select(x => GetInfrastructureItem(x.Name.ToString(), KeyWord))
         .ToArray();
 
       var count = 0;
       foreach (var usingItem in usingNodes)
       {
-        if (usingItem != null && usingItem != namespaceFeatureName)
+        if (usingItem != null && usingItem != infrastructureItem)
         {
           var location = root.Usings[count].Name.GetLocation();
-          var diagnostic = Diagnostic.Create(rule, location, namespaceFeatureName, usingItem);
+          var diagnostic = Diagnostic.Create(rule, location, infrastructureItem, usingItem);
           context.ReportDiagnostic(diagnostic);
         }
 
@@ -65,7 +65,7 @@ namespace ZorroCodeAnalyzers
       }
     }
 
-    private static string GetFeatureName(string route, string keyword)
+    private static string GetInfrastructureItem(string route, string keyword)
     {
       if (string.IsNullOrEmpty(route))
       {

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ZorroCodeAnalyzers.Example.Application
+namespace OldDotNetExample.Infrastructure.Database
 {
-  class App
+  class DB
   {
   }
 }

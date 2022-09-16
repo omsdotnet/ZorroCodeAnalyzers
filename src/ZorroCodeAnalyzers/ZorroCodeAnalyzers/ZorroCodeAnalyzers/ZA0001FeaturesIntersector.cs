@@ -42,7 +42,7 @@ namespace ZorroCodeAnalyzers
 
       var namespaceFeatureName = GetFeatureName(namespaceName, KeyWord);
 
-      if (string.IsNullOrEmpty(namespaceName))
+      if (string.IsNullOrEmpty(namespaceFeatureName))
       {
         return;
       }

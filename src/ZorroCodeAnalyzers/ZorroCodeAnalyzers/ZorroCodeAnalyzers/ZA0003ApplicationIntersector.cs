@@ -93,7 +93,7 @@ namespace ZorroCodeAnalyzers
 
       var segments = route.Split('.');
 
-      if (segments.Length < keyWordPosition)
+      if (segments.Length <= keyWordPosition)
       {
         return null;
       }
