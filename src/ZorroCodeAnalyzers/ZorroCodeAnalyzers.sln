@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32802.440
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZorroCodeAnalyzers", "ZorroCodeAnalyzers\ZorroCodeAnalyzers\ZorroCodeAnalyzers.csproj", "{872F5E5B-3143-49D5-B754-EBA71D2AC26C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZorroCodeAnalyzers.CodeFixes", "ZorroCodeAnalyzers\ZorroCodeAnalyzers.CodeFixes\ZorroCodeAnalyzers.CodeFixes.csproj", "{A14461E7-587B-4D1B-BC7A-1F805F3CD2A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZorroCodeAnalyzers.Package", "ZorroCodeAnalyzers\ZorroCodeAnalyzers.Package\ZorroCodeAnalyzers.Package.csproj", "{445922B2-6A1E-43C8-AF83-8946C7560B8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZorroCodeAnalyzers.Test", "ZorroCodeAnalyzers\ZorroCodeAnalyzers.Test\ZorroCodeAnalyzers.Test.csproj", "{F53A86F1-6993-4253-9B15-39E481D22164}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZorroCodeAnalyzers.Vsix", "ZorroCodeAnalyzers\ZorroCodeAnalyzers.Vsix\ZorroCodeAnalyzers.Vsix.csproj", "{C4D990E9-B934-4147-8031-E657AFD80A6D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{18B6383C-2399-4264-9426-4C06A0451FAE}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{872F5E5B-3143-49D5-B754-EBA71D2AC26C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{872F5E5B-3143-49D5-B754-EBA71D2AC26C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{872F5E5B-3143-49D5-B754-EBA71D2AC26C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{872F5E5B-3143-49D5-B754-EBA71D2AC26C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A14461E7-587B-4D1B-BC7A-1F805F3CD2A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A14461E7-587B-4D1B-BC7A-1F805F3CD2A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A14461E7-587B-4D1B-BC7A-1F805F3CD2A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A14461E7-587B-4D1B-BC7A-1F805F3CD2A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{445922B2-6A1E-43C8-AF83-8946C7560B8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{445922B2-6A1E-43C8-AF83-8946C7560B8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{445922B2-6A1E-43C8-AF83-8946C7560B8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{445922B2-6A1E-43C8-AF83-8946C7560B8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F53A86F1-6993-4253-9B15-39E481D22164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F53A86F1-6993-4253-9B15-39E481D22164}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F53A86F1-6993-4253-9B15-39E481D22164}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F53A86F1-6993-4253-9B15-39E481D22164}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4D990E9-B934-4147-8031-E657AFD80A6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4D990E9-B934-4147-8031-E657AFD80A6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4D990E9-B934-4147-8031-E657AFD80A6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4D990E9-B934-4147-8031-E657AFD80A6D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DDAAE952-5890-4854-8639-B6C56448D4E0}
+	EndGlobalSection
+EndGlobal
