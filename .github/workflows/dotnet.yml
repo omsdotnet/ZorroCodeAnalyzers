@@ -1,0 +1,25 @@
+name: .NET
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+          dotnet-version: 5.0.x
+    - name: Restore dependencies
+      run: dotnet restore ./src/ZorroCodeAnalyzers/ZorroCodeAnalyzers.sln
+    - name: Build
+      run: dotnet build ./src/ZorroCodeAnalyzers/ZorroCodeAnalyzers.sln --no-restore
+    - name: Test
+      run: dotnet test ./src/ZorroCodeAnalyzers/ZorroCodeAnalyzers.sln --no-build --verbosity normal
