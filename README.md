@@ -34,3 +34,4 @@ Add a link to the ZorroCodeAnalyzers nuget-package to your project, to add a lin
 
 * Solution *src\ZorroCodeAnalyzers* - a solution with a code analyzers and refactorings contains tests and VisualStudio plugin (vsix)
 * Solution *src\ZorroCodeAnalyzers.Example* - a solution with a project that references the compiled package ```ZorroCodeAnalyzers``` contains various code examples with analyzer-specific errors and is used to check the correctness of code analyzers
+* *promo* - content for promoution this project
