@@ -2,6 +2,8 @@
 
 Roslyn code analyzers
 
+![workflow state](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+
 
 # Project Promo:
 
