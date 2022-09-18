@@ -2,7 +2,7 @@
 
 Roslyn code analyzers
 
-![workflow state](https://github.com/omsdotnet/ZorroCodeAnalyzers/actions/workflows/dotnet.yml/badge.svg)
+![workflow state](https://github.com/omsdotnet/ZorroCodeAnalyzers/actions/workflows/dotnet.yml/badge.svg?event=push)
 
 
 # Project Promo:
