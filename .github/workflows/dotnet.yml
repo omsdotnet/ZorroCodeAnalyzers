@@ -18,8 +18,8 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore .\src\Zorr.CodeAnalyzers\ZorroCodeAnalyzers.sln
+      run: dotnet restore src\ZorroCodeAnalyzers\ZorroCodeAnalyzers.sln
     - name: Build
-      run: dotnet build .\src\ZorroCodeAnalyzers\ZorroCodeAnalyzers.sln --no-restore
+      run: dotnet build src\ZorroCodeAnalyzers\ZorroCodeAnalyzers.sln --no-restore
     - name: Test
-      run: dotnet test .\src\ZorroCodeAnalyzers\ZorroCodeAnalyzers.sln --no-build --verbosity normal
+      run: dotnet test src\ZorroCodeAnalyzers\ZorroCodeAnalyzers.sln --no-build --verbosity normal
