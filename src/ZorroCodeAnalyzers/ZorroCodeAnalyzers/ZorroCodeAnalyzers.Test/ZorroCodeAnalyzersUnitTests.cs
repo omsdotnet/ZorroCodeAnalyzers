@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.CodeAnalysis.Testing;
 using VerifyCS = ZorroCodeAnalyzers.Test.CSharpCodeFixVerifier<
     ZorroCodeAnalyzers.ZA0001FeaturesIntersector,
-    ZorroCodeAnalyzers.ZA0001FeaturesIntersectorCodeFixProvider>;
+    ZorroCodeAnalyzers.UsingRemoverCodeFixProvider>;
 
 namespace ZorroCodeAnalyzers.Test
 {
@@ -44,40 +44,36 @@ namespace ZorroCodeAnalyzers.Test
 
     //Diagnostic and CodeFix both triggered and checked for
     //[TestMethod]
-    public async Task TestMethod2()
+    public async Task CodeFixTest()
     {
       var test = @"
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-    using System.Diagnostics;
+        using FeaturesAnalyzer.Debug.Features.FeatureOne;
 
-    namespace ConsoleApplication1
-    {
-        class {|#0:TypeName|}
-        {   
+        namespace FeaturesAnalyzer.Debug.Features.FeatureTwo
+        {
+          class Buzz
+          {
+            public Fizz Value { get; set; }
+          }
         }
-    }";
+      ";
 
       var fixtest = @"
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-    using System.Diagnostics;
 
-    namespace ConsoleApplication1
-    {
-        class TYPENAME
-        {   
+        namespace FeaturesAnalyzer.Debug.Features.FeatureTwo
+        {
+          class Buzz
+          {
+            public Fizz Value { get; set; }
+          }
         }
-    }";
+      ";
 
-      var expected = VerifyCS.Diagnostic("ZorroCodeAnalyzers").WithLocation(0).WithArguments("TypeName");
-      await VerifyCS.VerifyCodeFixAsync(test, expected, fixtest);
+      var expected1 = DiagnosticResult.CompilerError("ZA0001").WithSpan(2, 15, 2, 57).WithArguments("FeatureTwo", "FeatureOne");
+      var expected2 = DiagnosticResult.CompilerError("CS0234").WithSpan(2, 47, 2, 57).WithArguments("FeatureOne", "FeaturesAnalyzer.Debug.Features");
+      var expected3 = DiagnosticResult.CompilerError("CS0246").WithSpan(8, 20, 8, 24).WithArguments("Fizz");
+
+      await VerifyCS.VerifyCodeFixAsync(test, new []{ expected1, expected2, expected3 }, fixtest);
     }
   }
 }
