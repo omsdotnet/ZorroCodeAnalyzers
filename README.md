@@ -19,9 +19,9 @@ Code analyzers are useful for automating code reviews in terms of checking compl
 ### List of code analyzers
 
 * [*ZA0001* - Feature namespaces must not overlap](https://github.com/omsdotnet/ZorroCodeAnalyzers/wiki/ZA0001)
-* *ZA0002* - Domain namespaces must not overlap with Application and Infrastructure
-* *ZA0003* - Application namespaces must not overlap with Infrastructure
-* *ZA0004* - Infrastructure port and adapters must not overlap
+* [*ZA0002* - Domain namespaces must not overlap with Application and Infrastructure](https://github.com/omsdotnet/ZorroCodeAnalyzers/wiki/ZA0002)
+* [*ZA0003* - Application namespaces must not overlap with Infrastructure](https://github.com/omsdotnet/ZorroCodeAnalyzers/wiki/ZA0003)
+* [*ZA0004* - Infrastructure port and adapters must not overlap](https://github.com/omsdotnet/ZorroCodeAnalyzers/wiki/ZA0004)
 
 
 ### Using code analyzers
