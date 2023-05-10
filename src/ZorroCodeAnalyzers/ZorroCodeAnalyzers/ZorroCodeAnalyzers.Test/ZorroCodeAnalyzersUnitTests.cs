@@ -65,7 +65,7 @@ namespace ZorroCodeAnalyzers.Test
 
       var settingsFile = new List<(string Name, string Content)>()
       {
-        (Name: "ZorroCodeAnalyzers.config", Content: settings)
+        (Name: "ZorroCodeAnalyzers.json", Content: settings)
       };
 
       var expected1 = DiagnosticResult.CompilerError("ZA0001").WithSpan(2, 15, 2, 54).WithArguments("FeatureTwo", "FeatureOne");

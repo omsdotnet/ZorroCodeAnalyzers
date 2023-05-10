@@ -39,7 +39,7 @@ namespace ZorroCodeAnalyzers
     private void InitializeSettings(CompilationStartAnalysisContext context)
     {
       var sourceText = context.Options.AdditionalFiles
-        .SingleOrDefault(x => x.Path == "ZorroCodeAnalyzers.config")
+        .SingleOrDefault(x => x.Path == "ZorroCodeAnalyzers.json")
         ?.GetText();
 
       if (sourceText == null)

@@ -34,6 +34,8 @@ namespace ZorroCodeAnalyzers.Test
         TestCode = source,
       };
 
+      test.TestState.AdditionalFiles.Clear();
+
       test.ExpectedDiagnostics.AddRange(expected);
 
       await test.RunAsync(CancellationToken.None);
