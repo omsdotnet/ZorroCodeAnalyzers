@@ -19,7 +19,7 @@ namespace ZorroCodeAnalyzers {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -61,7 +61,7 @@ namespace ZorroCodeAnalyzers {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Feature namespaces must not overlap.
+        ///   Looks up a localized string similar to Slice namespaces must not overlap.
         /// </summary>
         internal static string ZA0001Description {
             get {
@@ -70,7 +70,7 @@ namespace ZorroCodeAnalyzers {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Feature &apos;{0}&apos; overlap &apos;{1}&apos;.
+        ///   Looks up a localized string similar to Slice &apos;{0}&apos; overlap &apos;{1}&apos;.
         /// </summary>
         internal static string ZA0001MessageFormat {
             get {
@@ -79,7 +79,7 @@ namespace ZorroCodeAnalyzers {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Features intersector.
+        ///   Looks up a localized string similar to Slices intersector.
         /// </summary>
         internal static string ZA0001Title {
             get {

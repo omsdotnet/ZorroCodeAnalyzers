@@ -118,15 +118,15 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ZA0001Description" xml:space="preserve">
-    <value>Feature namespaces must not overlap</value>
+    <value>Slice namespaces must not overlap</value>
     <comment>An optional longer localizable description of the diagnostic.</comment>
   </data>
   <data name="ZA0001MessageFormat" xml:space="preserve">
-    <value>Feature '{0}' overlap '{1}'</value>
+    <value>Slice '{0}' overlap '{1}'</value>
     <comment>The format-able message the diagnostic displays.</comment>
   </data>
   <data name="ZA0001Title" xml:space="preserve">
-    <value>Features intersector</value>
+    <value>Slices intersector</value>
     <comment>The title of the diagnostic.</comment>
   </data>
   <data name="ZA0002Description" xml:space="preserve">

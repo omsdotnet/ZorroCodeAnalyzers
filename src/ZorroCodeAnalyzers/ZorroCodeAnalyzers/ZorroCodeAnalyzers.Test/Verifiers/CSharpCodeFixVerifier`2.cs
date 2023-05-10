@@ -4,6 +4,7 @@ using Microsoft.CodeAnalysis.CSharp.Testing;
 using Microsoft.CodeAnalysis.Diagnostics;
 using Microsoft.CodeAnalysis.Testing;
 using Microsoft.CodeAnalysis.Testing.Verifiers;
+using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -34,6 +35,24 @@ namespace ZorroCodeAnalyzers.Test
       };
 
       test.ExpectedDiagnostics.AddRange(expected);
+
+      await test.RunAsync(CancellationToken.None);
+    }
+
+    public static async Task VerifyAnalyzerAsync(string source, IEnumerable<(string Name, string Content)> additionalFiles, params DiagnosticResult[] expected)
+    {
+      var test = new Test
+      {
+        TestCode = source,
+      };
+
+      foreach (var additionalFile in additionalFiles)
+      {
+        test.TestState.AdditionalFiles.Add(additionalFile);
+      }
+
+      test.ExpectedDiagnostics.AddRange(expected);
+
       await test.RunAsync(CancellationToken.None);
     }
 

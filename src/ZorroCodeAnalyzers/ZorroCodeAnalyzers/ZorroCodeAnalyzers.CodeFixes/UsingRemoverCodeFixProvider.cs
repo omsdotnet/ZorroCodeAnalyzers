@@ -15,7 +15,7 @@ namespace ZorroCodeAnalyzers
   public class UsingRemoverCodeFixProvider : CodeFixProvider
   {
     public sealed override ImmutableArray<string> FixableDiagnosticIds =>
-      ImmutableArray.Create(ZA0001FeaturesIntersector.DiagnosticId, 
+      ImmutableArray.Create(ZA0001SlicesIntersector.DiagnosticId, 
         ZA0002DomainIntersector.DiagnosticId,
         ZA0003ApplicationIntersector.DiagnosticId, 
         ZA0004InfrastructureIntersector.DiagnosticId);
